@@ -23,6 +23,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  http: ^0.12.0+2
+  cached_network_image: ^1.1.1
+  shimmer: ^1.0.1
+  after_layout: ^1.0.7+2
 
 dev_dependencies:
   flutter_test:
@@ -70,3 +74,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: DINPro
+      fonts:
+        - asset: assets/fonts/DINPro-Light.otf
+          weight: 300
+        - asset: assets/fonts/DINPro-Regular.otf
+          weight: 400
+        - asset: assets/fonts/DINPro-Medium.otf
+          weight: 500
+        - asset: assets/fonts/DINPro-Bold.otf
+          weight: 700
