@@ -45,6 +45,7 @@ class _AlbumListState extends State<AlbumList> with AfterLayoutMixin {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size.width - 150;
     return Scaffold(
       appBar: AppBar(
         title: Text("All Albums"),
@@ -118,7 +119,7 @@ class _AlbumListState extends State<AlbumList> with AfterLayoutMixin {
                         SizedBox(
                           width: 10,
                         ),
-                        SizedBox(child: Text(album.title, style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),), width: 280,)
+                        SizedBox(child: Text(album.title, style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),), width: size,)
                       ],
                     ),
                   ),

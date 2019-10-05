@@ -41,6 +41,7 @@ class _TweetListState extends State<TweetList> with AfterLayoutMixin {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size.width - 150;
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
@@ -147,7 +148,7 @@ class _TweetListState extends State<TweetList> with AfterLayoutMixin {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                SizedBox(child: Text(tweet.body),width: 280,),
+                                SizedBox(child: Text(tweet.body),width: size,),
                                 Text("email: ${tweet.email}", style: TextStyle(color: Colors.blue),)
                               ],
                             )
